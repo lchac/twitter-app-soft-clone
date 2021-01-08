@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 import Tweet from '../components/Tweet'
 
 export default function Tweets() {
-    const users = useSelector(state => state.users)
     const tweets = useSelector(state => state.tweets)
     const tweetList = Object.keys(tweets)
         .map(id => tweets[id])
