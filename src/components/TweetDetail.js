@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux'
 
 export default function TweetDetail() {
     const { id } = useParams()
-    const users = useSelector((state) => state.users)
     const tweets = useSelector((state) => state.tweets)
 
     if (!Object.keys(tweets).includes(id)) {

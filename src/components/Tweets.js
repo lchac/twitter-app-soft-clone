@@ -12,8 +12,6 @@ export default function Tweets() {
     return (
         <ul>
             {tweetList.map((tweet) => {
-                const authorUser = users[tweet.author]
-                const parentAuthor = tweet.replyingTo ? tweets[tweet.replyingTo].author : null
                 return (
                     <Tweet key={tweet.id} id={tweet.id} />
                 )
